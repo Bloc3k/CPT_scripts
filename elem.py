@@ -1,19 +1,10 @@
 #!/usr/bin/python
 
 import sys
-from math import gcd
+from functions import elem
 
 z = int(sys.argv[1])
-elem_addit = []
-elem_multi = []
-
-for i in range(z):
-    elem_addit.append(i)
-
-for i in range(z):
-    if gcd(z, i) == 1:
-        elem_multi.append(i)
-
-print("Elements of an additive group Z" + str(z) + ": " + str(elem_addit))
-print("Elements of a multiplicative group Z" + str(z) + ": " + str(elem_multi))
+elem_addit, elem_multi = elem(z)
+print("\n\nElements of an additive group Z{}: {}".format(z, elem_addit))
+print("Elements of a multiplicative group Z*{}: {}\n".format(z, elem_multi))
 

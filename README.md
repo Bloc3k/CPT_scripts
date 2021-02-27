@@ -12,7 +12,7 @@ example: `elem.py 12` prints out elements of additive and multiplicative group Z
 
 example: `gcd.py 9 7`
 
-## Euler's totient function
+## Eulers function
 * `phi.py <number>`
 * `phi.py <factor_prime> <factor_prime> ... `
 
