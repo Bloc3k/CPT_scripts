@@ -17,6 +17,11 @@ example: `gcd.py 9 7`
 
 example: `phi.py 10`
 
+## Inverse element
+* `inv.py <element> <modulo>`
+
+example: `inv.py 5 12` gives and inverse of 5 in modulo 12 (only multiplicative group)
+
 # Requirements
 In order to run above commands as shown you need to have installed [python](https://www.python.org/downloads/) interpret and either be in current directory with scripts or have path to them set in system variable `$PATH` (on Windows)
 
