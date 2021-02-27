@@ -3,7 +3,7 @@ Scripts for Cryptologic Protocol Theory
 
 # Elements of a group
 For computing an element of a given group:
-* enter `elem.py <number_group>` to the command line
+* enter `elem.py <number_group>` to the command line  
 example: `elem.py 12` prints out elements of additive and multiplicative group Z12
 
 # Usage
