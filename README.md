@@ -1,5 +1,4 @@
-# CTP_sctipts
-Scripts for Cryptologic Protocol Theory
+# Scripts for Cryptologic Protocol Theory class
 
 # Elements of a group
 For computing an element of a given group:
