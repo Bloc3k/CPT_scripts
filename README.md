@@ -14,8 +14,10 @@ example: `gcd.py 9 7`
 
 ## Euler's totient function
 * `phi.py <number>`
+* `phi.py <factor_prime> <factor_prime> ... `
 
-example: `phi.py 10`
+example: `phi.py 60` or `phi.py 2 2 3 5`  
+Second usage is filled with prime factorization `60 = 2^2 * 3 * 5`
 
 ## Inverse element
 * `inv.py <element> <modulo>`
