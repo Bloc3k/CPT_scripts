@@ -12,6 +12,12 @@ example: `elem.py 12` prints out elements of additive and multiplicative group Z
 
 example: `gcd.py 9 7`
 
+## Fermant's test
+* `ferm.py <number_to_test>`
+* `ferm.py <number_to_test> <times>
+
+example: `ferm.py 69` will run test only once or `ferm.py 69 3` will run test 3 times
+
 ## Eulers function
 * `phi.py <number>`
 * `phi.py <factor_prime> <factor_prime> ... `
