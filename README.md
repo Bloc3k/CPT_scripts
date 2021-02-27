@@ -22,6 +22,9 @@ example: `phi.py 10`
 
 example: `inv.py 5 12` gives and inverse of 5 in modulo 12 (only multiplicative group)
 
+## Complexity
+* `complex.py` will show some basic info about computing complexity of an algorithm
+
 # Requirements
 In order to run above commands as shown you need to have installed [python](https://www.python.org/downloads/) interpret and either be in current directory with scripts or have path to them set in system variable `$PATH` (on Windows)
 
