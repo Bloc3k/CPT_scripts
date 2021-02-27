@@ -12,5 +12,5 @@ def phi_func(x):
         return len(n)
 
 
-print("phi({}) =  {} ".format(sys.argv[1], phi_func(int(sys.argv[1]))))
+print("phi({}) = {} ".format(sys.argv[1], phi_func(int(sys.argv[1]))))
 
