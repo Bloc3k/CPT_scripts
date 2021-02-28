@@ -34,6 +34,16 @@ def factorization(n):
     return fact
 
 
+def find_divisors(n):
+    divisors = []
+    i = 1
+    while i <= n:
+        if (n % i==0):
+            divisors.append(i)
+        i = i + 1
+    return divisors
+
+
 def elem_order(e, modulo):
     if elem(modulo).__contains__(e):
         i = 1
