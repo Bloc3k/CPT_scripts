@@ -30,6 +30,12 @@ Second usage is filled with prime factorization `60 = 2^2 * 3 * 5`
 
 example: `inv.py 5 12` gives and inverse of 5 in modulo 12 (only multiplicative group)
 
+## Order
+* `order.py <modulo>`  - prints out order of a group
+* `order.py <element> <modulo>` - prints out order of an element in a group
+
+example: `order.py 69` or `order.py 3 69`
+
 ## Complexity
 * `complex.py` will show some basic info about computing complexity of an algorithm
 
