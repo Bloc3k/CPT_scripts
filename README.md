@@ -10,7 +10,7 @@ Project consists of scripts for Cryptologic Protocol Theory class. It's meant to
 [`phi.py <number>`](#phi) or [`phi.py <prime_factor> <prime_factor> ... `](#phi) - Euler's function  
 [`inv.py <element> <modulo>`](#inv) - inverse element  
 [`order.py <modulo>`](#order) - order of a group  
-[`order.py <element> <modulo>`](#order) - order of and element  
+[`order.py <element> <modulo>`](#order) - order of an element
 
 # Scripts and their usage
 ## <a name="elem"></a>Elements of a group
