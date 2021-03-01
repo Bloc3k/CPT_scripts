@@ -1,41 +1,51 @@
 # Scripts for Cryptologic Protocol Theory class
 Project consists of scripts for Cryptologic Protocol Theory class. It's meant to support student's workflow through out the class.
 
+# Cheatsheet
+[`elem.py <modulo>`](#elem) - elements of a group  
+[`gcd.py <a_number> <b_number>`](#gcd) - Greatest common dividor  
+[`ferm.py <number_to_test>`](#ferm) or [`ferm.py <number_to_test> <times>`](#ferm) - Fermant's test  
+[`gen.py <element> <modulo>`](#gen) - tests if element is a generator  
+[`phi.py <number>`](#phi) or [`phi.py <prime_factor> <prime_factor> ... `](#phi) - Euler's function  
+[`inv.py <element> <modulo>`](#inv) - inverse element  
+[`order.py <modulo>`](#order) - order of a group  
+[`order.py <element> <modulo>`](#order) - order of and element  
+
 # Scripts and their usage
-## Elements of a group
-* `elem.py <number_group>`
+## <a name="elem"></a>Elements of a group
+* `elem.py <modulo>`
 
 example: `elem.py 12` prints out elements of additive and multiplicative group Z12
 
-## Greatest common divisor
+## <a name="gcd"></a>Greatest common divisor
 * `gcd.py <a_number> <b_number>`
 
 example: `gcd.py 9 7`
 
-## Fermant's test
+## <a name="ferm"></a>Fermant's test
 * `ferm.py <number_to_test>`
 * `ferm.py <number_to_test> <times>
 
 example: `ferm.py 69` will run test only once or `ferm.py 69 3` will run test 3 times
 
-## Generator
+## <a name="gen"></a>Generator
 * `gen.py <element> <modulo>` - test if `<element>` is a generator in `Z*<modulo>`
 
 example: `gen.py 3 10`
 
-## Eulers function
-* `phi.py <number>`
-* `phi.py <factor_prime> <factor_prime> ... `
+## <a name="phi"></a>Euler's function
+* `phi.py <number>` - calculates Euler's function for `<number>`
+* `phi.py <prime_factor> <prime_factor> ... ` - calculates Euler's function by prime factors of a number
 
 example: `phi.py 60` or `phi.py 2 2 3 5`  
 Second usage is filled with prime factorization `60 = 2^2 * 3 * 5`
 
-## Inverse element
+## <a name="inv"></a>Inverse element
 * `inv.py <element> <modulo>`
 
 example: `inv.py 5 12` gives and inverse of 5 in modulo 12 (only multiplicative group)
 
-## Order
+## <a name="order"></a>Order
 * `order.py <modulo>`  - prints out order of a group
 * `order.py <element> <modulo>` - prints out order of an element in a group
 
