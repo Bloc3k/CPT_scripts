@@ -3,8 +3,9 @@ Project consists of scripts for Cryptologic Protocol Theory class. It's meant to
 
 # Cheatsheet
 [`elem.py <modulo>`](#elem) - elements of a group  
-[`gcd.py <a_number> <b_number>`](#gcd) - Greatest common dividor  
-[`ferm.py <number_to_test>`](#ferm) or [`ferm.py <number_to_test> <times>`](#ferm) - Fermant's test  
+[`gcd.py <a_number> <b_number>`](#gcd) - Greatest common dividor (GCD)  
+[`eucgcd.py <a_number> <b_number>`](#eucgcd) - Euclidean Algorithm (GCD)  
+[`ferm.py <number_to_test>`](#ferm) or [`ferm.py <number_to_test> <n_times>`](#ferm) - Fermant's test  
 [`gen.py <element> <modulo>`](#gen) - tests if element is a generator  
 [`phi.py <number>`](#phi) or [`phi.py <prime_factor> <prime_factor> ... `](#phi) - Euler's function  
 [`inv.py <element> <modulo>`](#inv) - inverse element  
@@ -13,18 +14,23 @@ Project consists of scripts for Cryptologic Protocol Theory class. It's meant to
 
 # Scripts and their usage
 ## <a name="elem"></a>Elements of a group
-* `elem.py <modulo>`
+* `elem.py <modulo>` - prints out elements of additive and multiplicative group `Z<modulo>`
 
-example: `elem.py 12` prints out elements of additive and multiplicative group Z12
+example: `elem.py 12`
 
-## <a name="gcd"></a>Greatest common divisor
-* `gcd.py <a_number> <b_number>`
+## <a name="gcd"></a>Greatest common divisor (GCD)
+* `gcd.py <a_number> <b_number>` - finds GCD
 
 example: `gcd.py 9 7`
 
+## <a name="eucgcd"></a>Euclidean algorithm (GCD)
+* `eucgcd.py <a_number> <b_number>` - finds GCD with Euclidean algorithm
+
+example: `eucgcd.py <33> <12>`
+
 ## <a name="ferm"></a>Fermant's test
-* `ferm.py <number_to_test>`
-* `ferm.py <number_to_test> <times>
+* `ferm.py <number_to_test>` - tests if a `number` is a prime number through Fermant's test
+* `ferm.py <number_to_test> <n_times> - runs Fermant's test `<n_times>`
 
 example: `ferm.py 69` will run test only once or `ferm.py 69 3` will run test 3 times
 
@@ -41,7 +47,7 @@ example: `phi.py 60` or `phi.py 2 2 3 5`
 Second usage is filled with prime factorization `60 = 2^2 * 3 * 5`
 
 ## <a name="inv"></a>Inverse element
-* `inv.py <element> <modulo>`
+* `inv.py <element> <modulo>` - finds inverse to `<element>` in `Z*<modulo>` if exists
 
 example: `inv.py 5 12` gives and inverse of 5 in modulo 12 (only multiplicative group)
 
