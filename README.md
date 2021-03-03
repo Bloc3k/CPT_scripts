@@ -87,3 +87,5 @@ In order to run above commands as shown you need to have installed [python](http
 For faster workflow type only first few letters and press `TAB` key for auto-compltion. This way you never have to type ".py" at least.  
 You don't have to type `python` or `python3` unless you want to use that specific version.
 
+Feel free to contribute <3 <3 <3
+
