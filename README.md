@@ -38,7 +38,12 @@ example: `eucgcd.py <33> <12>`
 example: `ferm.py 69` will run test only once or `ferm.py 69 3` will run test 3 times
 
 ## <a name="gen"></a>Generator
+The generator is and element such that if you do element^1 than element^2 and so on, it will generate all elements in the group.
+The group Z*q has phi(phi(q)) generators, ONLY if q is a prime!!! The only possible orders of an element are divisors of the Order of the group.
+Only these possible orders are necessary to test if testing an element to be a generator. If at the possible order is the element congruent to 1 than this element is not a generator.
+However, if the element is congruent to 1 at the order of phi(q) than the element is a generator.
 * `gen.py <element> <modulo>` - test if `<element>` is a generator in `Z*<modulo>`
+* `gen.py <-t | --theory>` - prints out some basic theory
 
 example: `gen.py 3 10`
 
@@ -60,10 +65,13 @@ Second usage is filled with prime factorization `60 = 2^2 * 3 * 5`
 example: `inv.py 5 12` gives and inverse of 5 in modulo 12 (only multiplicative group)
 
 ## <a name="order"></a>Order
+Order of a group says how many elements group has. Order of an element says how many elements of a group can this element generate.
+The only possible orders of an element are divisors of Order of a group. Only these possible orders are necessary to test if testing an element to be a generator.
 * `order.py <modulo>`  - prints out order of a group
 * `order.py <element> <modulo>` - prints out order of an element in a group
+* `order.py <-t | --theory>` - prints out basic theory
 
-example: `order.py 69` or `order.py 3 69`
+example: `order.py 69` or `order.py 3 69` or `order.py -t`
 
 ## <a name="pow"></a>Power
 * `pow.py <base> <power>`
@@ -77,8 +85,15 @@ example: `pow.py 69 2` - computes `69^2`
 
 example: `mod.py 69 60`
 
+## Functions
+Injective (one-to-one) function is such that no two x map to same y  
+Surjective (onto) function is such that every y has AT LEAST one x  
+Bijective (combination of both) function is such that every y has EXACTLY one x
+
+* `func.py` - shows some basic theory about functions
+
 ## Complexity
-* `complex.py` will show some basic info about computing complexity of an algorithm
+* `complex.py` - will show some basic info about computing complexity of an algorithm
 
 # Requirements
 In order to run above commands as shown you need to have installed [python](https://www.python.org/downloads/) interpret and either be in current directory with scripts or have path to them set in system variable `$PATH` (on Windows)
