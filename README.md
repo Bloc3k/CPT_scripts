@@ -11,7 +11,8 @@ Project consists of scripts for Cryptologic Protocol Theory class. It's meant to
 [`inv.py <element> <modulo>`](#inv) - inverse element  
 [`order.py <modulo>`](#order) - order of a group  
 [`order.py <element> <modulo>`](#order) - order of an element  
-[`pow.py <base> <power>`](#pow) or [`pow.py <base> <power> <modulo>`](#pow) - power
+[`pow.py <base> <power>`](#pow) or [`pow.py <base> <power> <modulo>`](#pow) - power  
+[`mod.py <number> <modulo>`](#mod) - modulo
 
 # Scripts and their usage
 ## <a name="elem"></a>Elements of a group
@@ -64,6 +65,11 @@ example: `order.py 69` or `order.py 3 69`
 
 example: `pow.py 69 2` - computes `69^2`  
  `pow.py 69 2 16` - computes `69^2 mod 16`
+
+## <a name="mod"></a>Modulo
+* `mod.py <number> <mod>`
+
+example: `mod.py 69 60`
 
 ## Complexity
 * `complex.py` will show some basic info about computing complexity of an algorithm
