@@ -21,16 +21,20 @@ def ferm_test(n):
         a = random.randint(2, n-2)
     if pow(a, n-1, n) != 1:
         print("a={}:   {} != 1 mod {}".format(a, pow(a, n-1, n), n))
-        print("{} is NOT a prime number!!!".format(n))
+        print("{} is NOT a prime number!!!\n".format(n))
         sys.exit()
     else:
         print("a={}:   {} = 1 mod {}".format(a, pow(a, n-1, n), n))
-        print("{} probably is a prime number".format(n))
+        print("{} probably is a prime number\n".format(n))
 
 
 if len(sys.argv) == 3:
     print("\n\n")
     for i in range(int(sys.argv[2])):
+        if i > 100000:
+            print("\nUuuuuuhh that's hard bruh, I need rest  :C")
+            print("So i am saying It is Prime with 10000000% probability and go fuck of man...")
+            sys.exit()
         ferm_test(int(sys.argv[1]))
     print("\n")
 elif len(sys.argv) == 2:
