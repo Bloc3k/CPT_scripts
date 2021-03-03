@@ -19,13 +19,13 @@ if len(sys.argv) == 3:
         print('g = {}:'.format(g))
         for i in range(phi):
             if pow(g, i + 1, modulo) == 1:
-                print('   {}^{} = {} = 1   <--  {} is NOT a generator'.format(g, i + 1, pow(g, i + 1, modulo), g))
-                sys.exit()
-            else:
                 if i + 1 == phi:
                     print('   {}^{} = {} != 1   <--  {} is a generator'.format(g, i + 1, pow(g, i + 1, modulo), g))
                 else:
-                    print('   {}^{} = {} != 1'.format(g, i + 1, pow(g, i + 1, modulo)))
+                    print('   {}^{} = {} = 1   <--  {} is NOT a generator'.format(g, i + 1, pow(g, i + 1, modulo), g))
+                sys.exit()
+            else:
+                print('   {}^{} = {} != 1'.format(g, i + 1, pow(g, i + 1, modulo)))
     else:
         print('\ng = {} is NOT an element in Z*{}!!!   COMPUTATION CANT BE DONE!!!!!'.format(g, modulo))
 else:
