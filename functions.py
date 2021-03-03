@@ -45,7 +45,7 @@ def find_divisors(n):
 
 
 def elem_order(e, modulo):
-    if elem(modulo).__contains__(e):
+    if elem(modulo)[1].__contains__(e):
         i = 1
         while pow(e, i, modulo) != 1:
             i += 1
