@@ -20,9 +20,9 @@ if len(sys.argv) == 3:
         for i in range(phi):
             if pow(g, i + 1, modulo) == 1:
                 if i + 1 == phi:
-                    print('   {}^{} = {} != 1   <--  {} is a generator'.format(g, i + 1, pow(g, i + 1, modulo), g))
+                    print('   {}^{} = {} != 1   <--  {} is a generator,  order is {}'.format(g, i + 1, pow(g, i + 1, modulo), g, i+1))
                 else:
-                    print('   {}^{} = {} = 1   <--  {} is NOT a generator'.format(g, i + 1, pow(g, i + 1, modulo), g))
+                    print('   {}^{} = {} = 1   <--  {} is NOT a generator,  order is {}'.format(g, i + 1, pow(g, i + 1, modulo), g, i+1))
                 sys.exit()
             else:
                 print('   {}^{} = {} != 1'.format(g, i + 1, pow(g, i + 1, modulo)))
