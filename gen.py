@@ -29,5 +29,4 @@ if len(sys.argv) == 3:
     else:
         print('\ng = {} is NOT an element in Z*{}!!!   COMPUTATION CANT BE DONE!!!!!'.format(g, modulo))
 else:
-    print('\nBAD arguments!!!')
-    print('Usage:   gen.py <element> <modulo>')
+    print('\n\nUsage:   gen.py <element> <modulo>\n')

@@ -14,3 +14,5 @@ if len(sys.argv) == 3:
         r = a % b
         print('GCD({},{})'.format(a, b))
     print('GCD =', b)
+else:
+    print("\n\nUsage:   <a_number> <b_number>\n")

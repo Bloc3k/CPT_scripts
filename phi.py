@@ -11,4 +11,6 @@ if len(sys.argv) > 2:
     print("phi({}) = {} ".format(sum, phi_func(sum)))
 elif len(sys.argv) == 2:
     print("phi({}) = {} ".format(sys.argv[1], phi_func(int(sys.argv[1]))))
-
+else:
+    print("\n\nUsage:    phi.py <number> ")
+    print("          phi.py <prime_factor> <prime_factor> ...")

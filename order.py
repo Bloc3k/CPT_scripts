@@ -15,5 +15,5 @@ elif len(sys.argv) == 3:
     else:
         print('Order of {} in Z*{}:  {}'.format(e, modulo, elem_order(e, modulo)))
 else:
-    print('Usage:   order.py <modulo>')
+    print('\nUsage:   order.py <modulo>')
     print('         order.py <element> <modulo>')
