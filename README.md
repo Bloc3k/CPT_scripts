@@ -10,7 +10,8 @@ Project consists of scripts for Cryptologic Protocol Theory class. It's meant to
 [`phi.py <number>`](#phi) or [`phi.py <prime_factor> <prime_factor> ... `](#phi) - Euler's function  
 [`inv.py <element> <modulo>`](#inv) - inverse element  
 [`order.py <modulo>`](#order) - order of a group  
-[`order.py <element> <modulo>`](#order) - order of an element
+[`order.py <element> <modulo>`](#order) - order of an element  
+[`pow.py <base> <power>`](#pow) or [`pow.py <base> <power> <modulo>`](#pow) - power
 
 # Scripts and their usage
 ## <a name="elem"></a>Elements of a group
@@ -57,6 +58,13 @@ example: `inv.py 5 12` gives and inverse of 5 in modulo 12 (only multiplicative 
 
 example: `order.py 69` or `order.py 3 69`
 
+## <a name="pow"></a>Power
+* `pow.py <base> <power>`
+* `pow.py <base> <power> <modulo>`
+
+example: `pow.py 69 2` - computes `69^2`  
+ `pow.py 69 2 16` - computes `69^2 mod 16`
+
 ## Complexity
 * `complex.py` will show some basic info about computing complexity of an algorithm
 
@@ -64,5 +72,6 @@ example: `order.py 69` or `order.py 3 69`
 In order to run above commands as shown you need to have installed [python](https://www.python.org/downloads/) interpret and either be in current directory with scripts or have path to them set in system variable `$PATH` (on Windows)
 
 # Tip
-For faster workflow type only first few letters and press `TAB` key for auto-compltion. This way you never have to type ".py" at least.
+For faster workflow type only first few letters and press `TAB` key for auto-compltion. This way you never have to type ".py" at least.  
+You don't have to type `python` or `python3` unless you want to use that specific version.
 
