@@ -7,6 +7,7 @@ Project consists of scripts for Cryptologic Protocol Theory class. It's meant to
 [`eucgcd.py <a_number> <b_number>`](#eucgcd) - Euclidean Algorithm (GCD)  
 [`ferm.py <number_to_test>`](#ferm) or [`ferm.py <number_to_test> <n_times>`](#ferm) - Fermant's test  
 [`gen.py <element> <modulo>`](#gen) - tests if element is a generator  
+[`findgen.py <modulo>`](#findgen) - finds all generators of group  
 [`phi.py <number>`](#phi) or [`phi.py <prime_factor> <prime_factor> ... `](#phi) - Euler's function  
 [`inv.py <element> <modulo>`](#inv) - inverse element  
 [`order.py <modulo>`](#order) - order of a group  
@@ -40,6 +41,11 @@ example: `ferm.py 69` will run test only once or `ferm.py 69 3` will run test 3 
 * `gen.py <element> <modulo>` - test if `<element>` is a generator in `Z*<modulo>`
 
 example: `gen.py 3 10`
+
+## <a name="findgen"></a>Find all generators
+* `findgen.py <modulo>` - test all elements if they are a generator in `Z*<modulo>`
+
+example: `findgen.py 11`
 
 ## <a name="phi"></a>Euler's function
 * `phi.py <number>` - calculates Euler's function for `<number>`
