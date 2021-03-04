@@ -28,7 +28,7 @@ if len(sys.argv) == 3:
                 print('   {}^{} = {} != 1'.format(g, i + 1, pow(g, i + 1, modulo)))
     else:
         print('\ng = {} is NOT an element in Z*{}!!!   COMPUTATION CANT BE DONE!!!!!'.format(g, modulo))
-elif sys.argv[1] == '-t' or sys.argv[1] == '--theory':
+elif len(sys.argv) == 2 and (sys.argv[1] == '-t' or sys.argv[1] == '--theory'):
     print('\n-------------------------------------- THEORY - GENERATORS --------------------------------------------')
     print('The group Z*q has phi(phi(q)) generators, ONLY if q is a prime!!!')
     print('The only possible orders of an element are divisors of the Order of the group.')
@@ -37,5 +37,5 @@ elif sys.argv[1] == '-t' or sys.argv[1] == '--theory':
     print('However, if the element is congruent to 1 at the order of phi(q) than the element is a generator.')
     print("-------------------------------------------------------------------------------------------------------")
 else:
-    print('\n\nUsage:   gen.py <element> <modulo>')
+    print('\nUsage:   gen.py <element> <modulo>')
     print('         gen.py <-t | --theory>')

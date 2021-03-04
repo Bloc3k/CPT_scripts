@@ -4,7 +4,7 @@ import sys
 import functions
 
 
-if sys.argv[1] == '-t' or sys.argv[1] == '--theory':
+if len(sys.argv) == 2 and (sys.argv[1] == '-t' or sys.argv[1] == '--theory'):
     print("\n------------------------------------ THEORY - ORDERS ---------------------------------------")
     print('Order of a group says how many elements group has.')
     print('Order of an element says how many elements of a group can this element generate.')
