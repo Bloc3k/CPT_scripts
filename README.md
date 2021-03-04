@@ -60,9 +60,13 @@ example: `phi.py 60` or `phi.py 2 2 3 5`
 Second usage is filled with prime factorization `60 = 2^2 * 3 * 5`
 
 ## <a name="inv"></a>Inverse element
+Inverse is a number `a(^-1)` such that: `a * a^(-1) = 1 (mod n)`.  
+Inverse exist ONLY if a and n are comprime, means GCD(a,n) = 1 !!!
 * `inv.py <element> <modulo>` - finds inverse to `<element>` in `Z*<modulo>` if exists
+* `inv.py <-t | --theory>` - shows theory
 
-example: `inv.py 5 12` gives and inverse of 5 in modulo 12 (only multiplicative group)
+example: `inv.py 5 12` - gives and inverse of 5 in modulo 12 (only multiplicative group)  
+`inv.py --theory` - prints theory
 
 ## <a name="order"></a>Order
 Order of a group says how many elements group has. Order of an element says how many elements of a group can this element generate.
