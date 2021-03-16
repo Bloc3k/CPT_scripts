@@ -52,3 +52,11 @@ def elem_order(e, modulo):
         return i
     else:
         print('{} is NOT an element of a Z*{}'.format(e, modulo))
+
+
+def possible_squares(modulo):
+    possible_squares = []
+    for i in range(modulo):
+        if not possible_squares.__contains__(pow(i, 2, modulo)):
+            possible_squares.append(pow(i, 2, modulo))
+    return possible_squares
