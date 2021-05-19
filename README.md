@@ -15,8 +15,6 @@ Project consists of scripts for Cryptologic Protocol Theory class. It's meant to
 [`pow.py <base> <power>`](#pow) or [`pow.py <base> <power> <modulo>`](#pow) - power  
 [`mod.py <number> <modulo>`](#mod) - modulo
 
-[`possibleSquares.py <modulo>`](#posSquar) - finds possible squares in Field
-
 # Scripts and their usage
 ## <a name="elem"></a>Elements of a group
 * `elem.py <modulo>` - prints out elements of additive and multiplicative group `Z<modulo>`
